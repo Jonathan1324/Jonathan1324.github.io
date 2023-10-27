@@ -47,27 +47,14 @@ function roundnumber() {
     container.innerHTML = num.toFixed(5);
 }
 
-function Sinus(){
-    let container = document.getElementById('resultArea');
-    let result = eval(container.innerHTML);
-    let num = Math.sin(result * π / 180)
-    container.innerHTML = num.toFixed(10);
+function sin(angle){
+    return Math.sin(angle * (180 / π));
 }
 
-function Kosinus(){
-    let container = document.getElementById('resultArea');
-    let result = eval(container.innerHTML);
-    let num = Math.cos(result * π / 180)
-    container.innerHTML = num.toFixed(10);
+function cos(angle){
+    return Math.cos(angle * (180 / π));
 }
 
 function Tangens(){
-    let container = document.getElementById('resultArea');
-    let result = eval(container.innerHTML);
-    let num = Math.tan(result * π / 180);
-    if (container.innerHTML.startsWith(90)) {
-        container.innerHTML = undefined;
-    } else {
-        container.innerHTML = num.toFixed(10);
-    }
+    return Math.tan(angle * (180 / π));
 }
