@@ -48,13 +48,13 @@ function roundnumber() {
 }
 
 function sin(angle){
-    return Math.sin(angle * (180 / π));
+    return Math.sin(angle * (π / 180));
 }
 
 function cos(angle){
-    return Math.cos(angle * (180 / π));
+    return Math.cos(angle * (π / 180));
 }
 
 function Tangens(){
-    return Math.tan(angle * (180 / π));
+    return Math.tan(angle * (π / 180));
 }
